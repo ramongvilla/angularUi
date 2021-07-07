@@ -8,6 +8,9 @@ import { PersonaComponent } from './components/basico/persona/persona.component'
 import { FormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './components/basico/calculadora/calculadora.component';
 import { ListadoPersonasComponent } from './components/directivas/listado-personas/listado-personas.component';
+import { CarroComponent } from './comunicacion/input/carro/carro.component';
+import { CarrosComponent } from './comunicacion/input/carros/carros.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { ListadoPersonasComponent } from './components/directivas/listado-person
     PersonasComponent,
     PersonaComponent,
     CalculadoraComponent,
-    ListadoPersonasComponent
+    ListadoPersonasComponent,
+    CarroComponent,
+    CarrosComponent,
+
   ],
   imports: [
     BrowserModule,
