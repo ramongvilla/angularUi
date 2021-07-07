@@ -1,0 +1,28 @@
+<!-- <p>
+    Nombre: {{ nombre }}
+    Apellido: {{ apellido }}
+     Edad: {{ edad + 55}} cuando la variable es publica, concatenando con interpolacion
+     Edad: {{ getEdad() }} accediendo desde un metodo a la variable privada 
+</p>
+
+
+repetidor de texto con input
+<div (keyup)="0" >
+    <label > repetidor</label>
+    <input type="text" #entrada>
+    {{ entrada.value }
+
+</div> -->
+
+<div class="container">
+    <hr/>
+    <div class="row">
+        <div class="col">
+            <div *ngFor="let persona of personas; let i = index">
+                 {{ i+1 }} 
+                 {{ persona.nombre }} 
+                 {{ persona.apellido }} 
+            </div>
+        </div>
+    </div>
+</div>
