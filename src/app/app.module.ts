@@ -11,6 +11,9 @@ import { ListadoPersonasComponent } from './components/directivas/listado-person
 import { CarroComponent } from './comunicacion/input/carro/carro.component';
 import { CarrosComponent } from './comunicacion/input/carros/carros.component';
 import { FormularioComponent } from './comunicacion/input/formulario/formulario.component';
+import { FormComponent } from './calculadoraModular/form/form.component';
+import { VistaComponent } from './calculadoraModular/vista/vista.component';
+import { ResultadoComponent } from './calculadoraModular/resultado/resultado.component';
 
 
 @NgModule({
@@ -23,6 +26,9 @@ import { FormularioComponent } from './comunicacion/input/formulario/formulario.
     CarroComponent,
     CarrosComponent,
     FormularioComponent,
+    FormComponent,
+    VistaComponent,
+    ResultadoComponent,
 
   ],
   imports: [
