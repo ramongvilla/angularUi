@@ -10,6 +10,7 @@ import { CalculadoraComponent } from './components/basico/calculadora/calculador
 import { ListadoPersonasComponent } from './components/directivas/listado-personas/listado-personas.component';
 import { CarroComponent } from './comunicacion/input/carro/carro.component';
 import { CarrosComponent } from './comunicacion/input/carros/carros.component';
+import { FormularioComponent } from './comunicacion/input/formulario/formulario.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CarrosComponent } from './comunicacion/input/carros/carros.component';
     ListadoPersonasComponent,
     CarroComponent,
     CarrosComponent,
+    FormularioComponent,
 
   ],
   imports: [
