@@ -1,3 +1,4 @@
+import { CarrosService } from './../../../services/carros.service';
 import { Component, OnInit } from '@angular/core';
 import { Persona } from '../clases/carro.model';
 
@@ -6,17 +7,20 @@ import { Persona } from '../clases/carro.model';
   templateUrl: './carros.component.html',
   styleUrls: ['./carros.component.scss']
 })
-export class CarrosComponent  {
+export class CarrosComponent implements OnInit  {
 
   titulo = 'Listado de Personas';
-  personas: Persona[] = [
-    new Persona('Juan','Perez'), 
-    new Persona('Laura', 'Juarez'),
-    new Persona('Karla', 'Lara')
-  ];
+  personas: Persona[] = [];
+  
+  constructor(private carrosService:CarrosService){}
+
+  ngOnInit() {
+    this.personas = this.carrosService.personas;
+  }
 
   personaAgregada(persona:Persona){
-    this.personas.push(persona);
+    // this.personas.push(persona);
+    this.carrosService.agregarPersona(persona);
   }
   // nombreInput:string = '';
   // apellidoInput:string = '';
