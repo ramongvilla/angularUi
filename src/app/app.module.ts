@@ -14,6 +14,11 @@ import { FormularioComponent } from './comunicacion/input/formulario/formulario.
 import { FormComponent } from './calculadoraModular/form/form.component';
 import { VistaComponent } from './calculadoraModular/vista/vista.component';
 import { ResultadoComponent } from './calculadoraModular/resultado/resultado.component';
+import { VistaPresupuestoComponent } from './presupuesto/vista-presupuesto/vista-presupuesto.component';
+import { HeaderComponent } from './presupuesto/header/header.component';
+import { FormpComponent } from './presupuesto/formp/formp.component';
+import { IngresosComponent } from './presupuesto/ingresos/ingresos.component';
+import { EgresosComponent } from './presupuesto/egresos/egresos.component';
 
 
 @NgModule({
@@ -29,6 +34,11 @@ import { ResultadoComponent } from './calculadoraModular/resultado/resultado.com
     FormComponent,
     VistaComponent,
     ResultadoComponent,
+    VistaPresupuestoComponent,
+    HeaderComponent,
+    FormpComponent,
+    IngresosComponent,
+    EgresosComponent,
 
   ],
   imports: [
