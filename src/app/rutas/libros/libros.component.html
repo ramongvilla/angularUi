@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="col ">
+    <h3>{{ titulo }}</h3>
+  </div>
+  <hr />
+
+  <div class="menu">
+
+    <button class="btn btn-outline-success " (click)="agregar()">
+      <i class="bi bi-plus-circle"></i>
+    </button>
+
+  </div>
+  <app-libro *ngFor="let libroElemento of libros; let i = index" [libro]="libroElemento" [indice]="i">
+  </app-libro>
+  <!-- <app-forml (libroCreado)="libroAgregado($event)"></app-forml   -->
+  
+    <!-- <app-forml></app-forml> -->
+  <router-outlet> </router-outlet> <!-- child route -->
+    
+    <hr />
+
+
+
+</div>

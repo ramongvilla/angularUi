@@ -1,10 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './rutas/error/error.component';
 
-const routes: Routes = [];
+import { FormlComponent } from './rutas/libros/forml/forml.component';
+import { LibrosComponent } from './rutas/libros/libros.component';
+
+const routes: Routes = [
+  { path: '', component: LibrosComponent },
+
+  //rutas
+  // {path:'libros', component: LibrosComponent},
+  // {path:'libros/:id', component: FormlComponent}
+  // {path:'libros/agregar', component: FormlComponent},
+
+  // Child Route
+  {
+    path: 'libros',
+    component: LibrosComponent,
+    children: [
+      { path: 'agregar', component: FormlComponent },
+      { path: ':id', component: FormlComponent },
+    ],
+  },
+  { path: '**', component: ErrorComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

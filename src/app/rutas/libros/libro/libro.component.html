@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row ">
+    <div class="col g-2">
+
+      <ul>
+        <li>
+          <a [routerLink]="['/libros',indice]"
+             [queryParams]="{modEdicion:1}"    
+          >
+          {{ indice + 1 }}: {{ libro.nombre }} {{ libro.autor }}
+          </a>
+        </li>
+      </ul>
+
+      <!-- <div>
+        <button type="submit" class="btn btn-primary" (click)="emitirSaludo()">
+          <i class="bi bi-app-indicator"></i>
+        </button>
+      </div> -->
+    </div>
+  </div>
+</div>

@@ -19,6 +19,10 @@ import { HeaderComponent } from './presupuesto/header/header.component';
 import { FormpComponent } from './presupuesto/formp/formp.component';
 import { IngresosComponent } from './presupuesto/ingresos/ingresos.component';
 import { EgresosComponent } from './presupuesto/egresos/egresos.component';
+import { LibrosComponent } from './rutas/libros/libros.component';
+import { FormlComponent } from './rutas/libros/forml/forml.component';
+import { LibroComponent } from './rutas/libros/libro/libro.component';
+import { ErrorComponent } from './rutas/error/error.component';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { EgresosComponent } from './presupuesto/egresos/egresos.component';
     FormpComponent,
     IngresosComponent,
     EgresosComponent,
+    LibrosComponent,
+    FormlComponent,
+    LibroComponent,
+    ErrorComponent,
 
   ],
   imports: [
