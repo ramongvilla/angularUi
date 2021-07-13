@@ -16,7 +16,16 @@ export class LibrosComponent implements OnInit {
               private router:Router) { }
 
   ngOnInit(): void {
-    this.libros=this.libroService.libros;
+    this.libroService.getLibtros()
+    .subscribe(
+      (libros:Libro[]) => {
+        this.libros = libros;
+        this.libroService.setLibros(libros);
+
+      }
+    );
+
+    // this.libros=this.libroService.libros;
   }
 
   // libroAgregado(libro:Libro){

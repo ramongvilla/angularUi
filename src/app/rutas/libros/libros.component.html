@@ -1,3 +1,4 @@
+<h2>prueba</h2>
 <div class="container">
   <div class="col ">
     <h3>{{ titulo }}</h3>
@@ -14,11 +15,12 @@
   <app-libro *ngFor="let libroElemento of libros; let i = index" [libro]="libroElemento" [indice]="i">
   </app-libro>
   <!-- <app-forml (libroCreado)="libroAgregado($event)"></app-forml   -->
-  
-    <!-- <app-forml></app-forml> -->
-  <router-outlet> </router-outlet> <!-- child route -->
-    
-    <hr />
+
+  <!-- <app-forml></app-forml> -->
+    <router-outlet> </router-outlet> 
+    <!-- child route -->
+
+  <hr />
 
 
 

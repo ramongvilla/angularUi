@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -23,6 +24,7 @@ import { LibrosComponent } from './rutas/libros/libros.component';
 import { FormlComponent } from './rutas/libros/forml/forml.component';
 import { LibroComponent } from './rutas/libros/libro/libro.component';
 import { ErrorComponent } from './rutas/error/error.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { ErrorComponent } from './rutas/error/error.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
