@@ -1,0 +1,104 @@
+body{
+    font: 62.5% Open Sans, Freesans, sans-serif;
+    background: #2c3338;
+}
+
+
+.login-wrapper{
+    width: 400px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 10px;    
+    background: #2c3338;
+}
+
+form h1{
+    color:#dedede;
+    
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+}
+
+form h1 span{
+    font-weight: 500;
+    letter-spacing: -1px;
+    
+}
+
+form input{
+    border:none;
+    margin:0;
+    border-radius: 0px 10px 10px 0px;  
+}
+
+form .input-row{
+    margin:2em 0;
+    overflow:hidden;
+}
+
+form .icon{
+    font-size:1.4em;
+    background:#FFFFFF;
+    padding:0.8em;
+    border-left:4px solid #ea4c88;
+    color:#9f9f9f;
+    float:left;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+form input[type="text"],form input[type="password"] {
+    padding:0.8em 0.8em 0.8em 0;
+    font-size:1.4em;
+    color:#c2c2c2;
+    width:275px;
+}
+
+form input[type="text"]:focus,form input[type="password"]:focus {
+    outline:0;
+}
+
+form input[type="submit"]{
+    border:none;
+    background:#ea4c88;
+    color:#FFFFFF;
+    font-size:1.6em;
+    padding:0.7em 1.2em;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+form input[type="submit"]:hover {
+    background:#c62a65;
+    opacity: 0.8;
+}
+
+form .reset{
+    margin-left:1em;
+    color:#FFFFFF;
+    font-size: 1.4em;
+}
+
+form .reset a{
+    color:#FFFFFF;
+}
+
+form .reset a:hover{
+    text-decoration: none;
+}
+
+form .submit-row{
+    text-align: center;
+}
+
+.btn-light:hover{
+    background:#c62a65;
+    border: none;
+    opacity: 0.8;
+    color: #FFFFFF;
+}

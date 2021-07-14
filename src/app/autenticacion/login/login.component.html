@@ -1,0 +1,26 @@
+<div class="login-wrapper">
+    <form [formGroup]="formGroup">
+        <h1><span>Bonsai</span> Login.</h1>
+
+        <div class="input-row">
+            <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+            <input type="text" placeholder="Email" name="email" formControlName="email" />
+            <span class="text-danger">{{ getError('email')}}</span>
+        </div>
+
+        <div class="input-row">
+            <span class="icon"><i class="bi bi-lock-fill"></i></span>
+            <input placeholder="Password" formControlName="password" type="password" name="password" autocomplete="on" />
+            <span class="text-danger">{{ getError('password')}}</span>
+        </div>
+
+        <div class="submit-row">
+            <button class="btn btn-light" (click)="register()"
+            [disabled]="formGroup.invalid">Sign in</button>
+            <span class="reset">or <a href="#">Reset Password</a></span>
+        </div>
+
+
+    </form>
+</div>
+

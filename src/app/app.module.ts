@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonasComponent } from './components/basico/personas/personas.component';
 import { PersonaComponent } from './components/basico/persona/persona.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './components/basico/calculadora/calculadora.component';
 import { ListadoPersonasComponent } from './components/directivas/listado-personas/listado-personas.component';
 import { CarroComponent } from './comunicacion/input/carro/carro.component';
@@ -25,6 +25,7 @@ import { FormlComponent } from './rutas/libros/forml/forml.component';
 import { LibroComponent } from './rutas/libros/libro/libro.component';
 import { ErrorComponent } from './rutas/error/error.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './autenticacion/login/login.component';
 
 
 @NgModule({
@@ -49,12 +50,14 @@ import { HttpClientModule } from '@angular/common/http';
     FormlComponent,
     LibroComponent,
     ErrorComponent,
+    LoginComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

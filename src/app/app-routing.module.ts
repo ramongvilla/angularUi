@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './autenticacion/login/login.component';
 import { ErrorComponent } from './rutas/error/error.component';
 import { FormlComponent } from './rutas/libros/forml/forml.component';
 import { LibrosComponent } from './rutas/libros/libros.component';
@@ -22,7 +23,7 @@ const routes: Routes = [
       { path: ':id', component: FormlComponent },
     ],
   },
-  { path: '**', component: ErrorComponent }
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({
