@@ -21,6 +21,8 @@ export class LibrosComponent implements OnInit {
       (libros:Libro[]) => {
         this.libros = libros;
         this.libroService.setLibros(libros);
+        // console.log(libros);
+        
 
       }
     );

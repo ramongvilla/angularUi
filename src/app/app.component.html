@@ -8,6 +8,13 @@
 
 <!-- rutas -->
 <!-- <app-libros></app-libros> -->
+<div class="content"  >
+    <div class="row">
+        <button class="btn btn-primary" *ngIf="isAutenticado()" (click)="salir()"> <i class="bi bi-box-arrow-in-left"></i> salir</button>
+        <button class="btn btn-primary" *ngIf = "!isAutenticado()" routerLink="/login"> <i class="bi bi-box-arrow-in-right"></i> login </button>
+
+    </div>
+</div>
 
 <h1>esta es la cabecera</h1>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> 
